@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>Abiram Srikanthasegaram — Embedded Systems Engineer</title>
-<link rel="icon" type="image/png" href="tab_dp.png"/>
+<link rel="icon" type="image/png" href="images/tab_dp.png"/>
 <meta name="description" content="Embedded firmware engineer, control systems developer, PCB designer and UAV prototyper. Computer Systems Engineering undergraduate at SLIIT."/>
 <meta name="keywords" content="embedded systems engineer, firmware engineer, robotics engineer, IoT engineer, UAV developer, PCB designer, control systems engineer, AVR Assembly, Raspberry Pi, Arduino"/>
 <meta property="og:title" content="Abiram Srikanthasegaram — Embedded Systems Engineer"/>
@@ -58,7 +58,7 @@
     <div class="hero-content">
       <div class="hero-dp-container reveal">
         <div class="hero-dp-glow"></div>
-        <img src="DP.png" alt="Abiram Srikanthasegaram" class="hero-dp" />
+        <img src="images/DP.png" alt="Abiram Srikanthasegaram" class="hero-dp" />
       </div>
       <p class="hero-eyebrow" role="text">Embedded Systems Engineer</p>
       <h1 class="hero-title">
@@ -347,7 +347,9 @@
       <div class="project-card reveal" onclick="openModal('line')" role="button" tabindex="0" aria-label="Line following robot project">
         <div class="project-vis pcb-vis">
           <div class="grid-overlay"></div>
-          <div class="project-vis-inner" style="font-size:3rem">🤖</div>
+          <div class="project-vis-inner">
+            <img src="images/projects/AVR/Line_Follower.png" alt="Line Following Robot" style="width:100%; height:100%; object-fit:cover;" />
+          </div>
           <div class="project-badge">Year 3 · 2026</div>
         </div>
         <div class="project-body">
@@ -492,7 +494,11 @@
     <p class="section-tag reveal">05 — Personal Project</p>
     <div class="agni-hero reveal">
       <div class="agni-big-title">AGNI WING</div>
-      <p class="agni-sub">A self-directed, four-person engineering team on a long-term mission to build an autonomous fixed-wing UAV. We started by learning to fly manually.</p>
+      <p class="agni-sub">A self-directed, five-person engineering team on a long-term mission to build an autonomous fixed-wing UAV. We started by learning to fly manually.</p>
+    </div>
+
+    <div class="agni-slideshow reveal" style="width:100%; max-width:600px; margin: 0 auto 3rem auto; border-radius: var(--radius-lg); overflow:hidden; aspect-ratio: 16/9; border: 1px solid var(--border); box-shadow: var(--glow-blue); position:relative; background: var(--bg-1);">
+      <img src="images/projects/Agni_wing/1.jpeg" alt="Agni Wing UAV Prototype" style="width:100%; height:100%; object-fit:cover;" />
     </div>
 
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-bottom:3rem;align-items:start">
@@ -605,6 +611,10 @@
         <div style="font-size:0.88rem;color:var(--gray-1)">🤖 Integration of <strong style="color:var(--white)">autonomous flight control</strong></div>
       </div>
     </div>
+
+    <div class="reveal" style="margin-top:4rem; display:flex; justify-content:center;">
+      <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7457796825933168642" height="1761" width="504" frameborder="0" allowfullscreen="" title="Embedded post" style="max-width: 100%; border-radius: 8px; background: #fff;"></iframe>
+    </div>
   </div>
 </section>
 
@@ -703,24 +713,33 @@
         </div>
       </div>
       <div class="reveal reveal-delay-1">
-        <form class="contact-form" onsubmit="handleForm(event)">
+        <div data-fs-success style="display:none; padding:1rem; background:rgba(0,255,224,0.1); border:1px solid var(--cyan); border-radius:8px; margin-bottom:1rem; color:var(--cyan); font-family:var(--mono); font-size:0.8rem;">
+          Message sent successfully! I'll get back to you soon.
+        </div>
+        <div data-fs-error style="display:none; padding:1rem; background:rgba(255,80,80,0.1); border:1px solid #ff5555; border-radius:8px; margin-bottom:1rem; color:#ff5555; font-family:var(--mono); font-size:0.8rem;"></div>
+
+        <form id="contact-form" class="contact-form">
           <div class="form-group">
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name"/>
+            <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name" data-fs-field/>
+            <span data-fs-error="name" style="color:#ff5555; font-size:0.75rem;"></span>
           </div>
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email"/>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email" data-fs-field/>
+            <span data-fs-error="email" style="color:#ff5555; font-size:0.75rem;"></span>
           </div>
           <div class="form-group">
             <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" placeholder="Internship opportunity / Collaboration / etc."/>
+            <input type="text" id="subject" name="subject" placeholder="Internship opportunity / Collaboration / etc." data-fs-field/>
+            <span data-fs-error="subject" style="color:#ff5555; font-size:0.75rem;"></span>
           </div>
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Tell me about the role or project..." required></textarea>
+            <textarea id="message" name="message" placeholder="Tell me about the role or project..." required data-fs-field></textarea>
+            <span data-fs-error="message" style="color:#ff5555; font-size:0.75rem;"></span>
           </div>
-          <button type="submit" class="form-submit">Open Email Client →</button>
+          <button type="submit" class="form-submit" data-fs-submit-btn>Send Message →</button>
         </form>
       </div>
     </div>
@@ -752,6 +771,11 @@
   </div>
 </div>
 
+<script>
+  window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+  formspree('initForm', { formElement: '#contact-form', formId: 'xaqvdbve' });
+</script>
+<script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 <script src="script.js"></script>
 </body>
 </html>
