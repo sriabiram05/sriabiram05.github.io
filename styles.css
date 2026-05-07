@@ -756,7 +756,7 @@ footer {
    RESPONSIVE
 ═══════════════════════════════════════════════════ */
 @media (max-width: 768px) {
-  .hero-inner { grid-template-columns: 1fr; gap: 3rem; text-align: center; justify-items: center; }
+  .hero-inner { padding: 0 1.5rem; grid-template-columns: 1fr; gap: 3rem; text-align: center; justify-items: center; }
   .hero-eyebrow { justify-content: center; }
   .hero-btns { justify-content: center; }
   .hero-chips { justify-content: center; }
