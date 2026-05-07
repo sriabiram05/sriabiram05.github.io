@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Abiram Srikanthasegaram — Embedded Systems Engineer</title>
+<link rel="icon" type="image/png" href="tab_dp.png"/>
+<meta name="description" content="Embedded firmware engineer, control systems developer, PCB designer and UAV prototyper. Computer Systems Engineering undergraduate at SLIIT."/>
+<meta name="keywords" content="embedded systems engineer, firmware engineer, robotics engineer, IoT engineer, UAV developer, PCB designer, control systems engineer, AVR Assembly, Raspberry Pi, Arduino"/>
+<meta property="og:title" content="Abiram Srikanthasegaram — Embedded Systems Engineer"/>
+<meta property="og:description" content="Building intelligent embedded systems from silicon to software."/>
+<meta property="og:type" content="website"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- Scroll progress -->
+<div id="scroll-bar"></div>
+
+<!-- Animated canvas background -->
+<canvas id="bg-canvas"></canvas>
+
+<!-- ══════════════════════════════════════════
+     NAVBAR
+══════════════════════════════════════════ -->
+<nav role="navigation" aria-label="Main navigation">
+  <div class="nav-logo">AS<span>.</span>ENG</div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#skills">Stack</a>
+    <a href="#projects">Projects</a>
+    <a href="#agni">Agni Wing</a>
+    <a href="#education">Education</a>
+    <a href="#contact" class="nav-cta">Contact</a>
+  </div>
+  <button class="hamburger" aria-label="Menu" onclick="toggleMenu()" id="hamburger">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobile-menu" role="navigation">
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#skills" onclick="closeMenu()">Tech Stack</a>
+  <a href="#projects" onclick="closeMenu()">Projects</a>
+  <a href="#agni" onclick="closeMenu()">Agni Wing</a>
+  <a href="#certs" onclick="closeMenu()">Certifications</a>
+  <a href="#education" onclick="closeMenu()">Education</a>
+  <a href="#contact" onclick="closeMenu()">Contact</a>
+</div>
+
+<!-- ══════════════════════════════════════════
+     HERO
+══════════════════════════════════════════ -->
+<section id="hero" aria-label="Introduction">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-dp-container reveal">
+        <div class="hero-dp-glow"></div>
+        <img src="DP.png" alt="Abiram Srikanthasegaram" class="hero-dp" />
+      </div>
+      <p class="hero-eyebrow" role="text">Embedded Systems Engineer</p>
+      <h1 class="hero-title">
+        Building <span class="accent">Intelligent</span><br>
+        Embedded Systems<br>
+        <span class="accent-cyan">From Silicon to Software</span>
+      </h1>
+      <p class="hero-sub">
+        Computer Systems Engineering undergraduate specializing in embedded firmware,
+        control systems, PCB fabrication, robotics, and autonomous systems.
+        Based in Jaffna, Sri Lanka — open to work in Jaffna, Colombo &amp; remote roles.
+      </p>
+      <div class="hero-btns">
+        <a href="Sri_Abiram_Resume.pdf" class="btn-primary" download aria-label="Download resume">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          Download CV
+        </a>
+        <a href="https://linkedin.com/in/abiram-srikanthasegaram-a8b92a321" target="_blank" rel="noopener" class="btn-ghost">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/sriabiram05" target="_blank" rel="noopener" class="btn-ghost">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          GitHub
+        </a>
+        <a href="#contact" class="btn-ghost">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Get in Touch
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><div class="hero-stat-num">6+</div><div class="hero-stat-label">Completed Engineering Projects</div></div>
+        <div class="hero-stat"><div class="hero-stat-num">100%</div><div class="hero-stat-label">Test Pass Rate — Line-Following Robot</div></div>
+        <div class="hero-stat"><div class="hero-stat-num">&lt;2%</div><div class="hero-stat-label">Steady-State Error — PID Motor Control</div></div>
+        <div class="hero-stat"><div class="hero-stat-num">35%</div><div class="hero-stat-label">Miss Ratio Reduction — Cache Simulator</div></div>
+      </div>
+    </div>
+
+    <div class="hero-right reveal">
+      <div class="terminal-card">
+        <div class="terminal-header">
+          <div class="t-dot t-red"></div>
+          <div class="t-dot t-amber"></div>
+          <div class="t-dot t-green"></div>
+          <span class="terminal-title">abiram@embedded:~</span>
+        </div>
+        <div class="terminal-body">
+          <div class="t-line"><span class="t-prompt">→</span> <span class="t-cmd">cat engineer.profile</span></div>
+          <div class="t-line t-out">Name: <span class="t-blue">Abiram Srikanthasegaram</span></div>
+          <div class="t-line t-out">Role: <span class="t-blue">Embedded Systems Engineer</span></div>
+          <div class="t-line t-out">Status: <span class="t-green-t">Open to Internship</span></div>
+          <div class="t-line t-out">Location: Jaffna, Sri Lanka</div>
+          <br>
+          <div class="t-line"><span class="t-prompt">→</span> <span class="t-cmd">ls ./projects</span></div>
+          <div class="t-line t-out t-blue">PID_Motor_Control/</div>
+          <div class="t-line t-out t-blue">LineFollowing_Robot/</div>
+          <div class="t-line t-out t-blue">Agni_Wing_UAV/</div>
+          <div class="t-line t-out t-blue">Cache_Simulator/</div>
+          <div class="t-line t-out t-blue">CLIMS_IoT/</div>
+          <br>
+          <div class="t-line"><span class="t-prompt">→</span> <span class="t-cmd">./run_system --mode=embedded</span></div>
+          <div class="t-line t-out"><span class="t-green-t">✓</span> AVR Assembly loaded</div>
+          <div class="t-line t-out"><span class="t-green-t">✓</span> PID controller active</div>
+          <div class="t-line t-out"><span class="t-green-t">✓</span> PCB fabricated</div>
+          <div class="t-line t-out"><span class="t-green-t">✓</span> UAV prototype airborne</div>
+          <div class="t-line"><span class="t-prompt">→</span> <span class="t-cursor"></span></div>
+        </div>
+      </div>
+      <div class="hero-chips">
+        <span class="chip">AVR Assembly</span><span class="chip">PID Control</span>
+        <span class="chip">PCB Design</span><span class="chip">Raspberry Pi</span>
+        <span class="chip">ATmega328P</span><span class="chip">MATLAB/Simulink</span>
+        <span class="chip">ESP32</span><span class="chip">XFLR5</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="glow-line"></div>
+
+<!-- ══════════════════════════════════════════
+     ABOUT
+══════════════════════════════════════════ -->
+<section id="about" class="section" aria-label="About">
+  <div class="section-inner">
+    <p class="section-tag reveal">01 — About</p>
+    <h2 class="section-title reveal">Engineering From<br><span style="color:var(--blue)">First Principles</span></h2>
+
+    <div class="about-grid" style="margin-top:3rem">
+      <div class="about-text">
+        <p class="reveal">I'm a <strong>Computer Systems Engineering</strong> undergraduate at SLIIT (2023–2027), specialising in the intersection where <span class="hl">hardware meets software</span> — where the physics of circuits and the logic of code combine to produce systems that actually work in the real world.</p>
+        <p class="reveal reveal-delay-1">My approach is empirical. I design in simulation, fabricate in hardware, test against measurable targets, and document every failure. The cache simulator taught me what 64B line sizes do to spatial locality. The PID motor taught me why derivative terms amplify noise. The UAV taught me that <strong>five crashes</strong> can teach more than five textbooks.</p>
+        <p class="reveal reveal-delay-2">I'm targeting roles in <span class="hl">embedded firmware</span>, <span class="hl">control systems</span>, <span class="hl">robotics</span>, and <span class="hl">IoT engineering</span> — environments where I can apply rapid prototyping and systems-level thinking to real engineering challenges.</p>
+
+        <div class="philosophy-cards" style="margin-top:2rem">
+          <div class="phil-card reveal reveal-delay-1">
+            <h4>// Systems Thinking</h4>
+            <p>Every component is part of a larger system. I design with interfaces, constraints, and failure modes in mind from the start.</p>
+          </div>
+          <div class="phil-card reveal reveal-delay-2">
+            <h4>// Fail → Analyse → Rebuild</h4>
+            <p>Iterative failure is the fastest path to robust systems. I document what broke, why it broke, and what the fix teaches me architecturally.</p>
+          </div>
+          <div class="phil-card reveal reveal-delay-3">
+            <h4>// Measurable Outcomes</h4>
+            <p>Every project has a quantitative success criterion. Overshoot &lt;15%. Miss ratio improvement &gt;35%. 100% test pass rate. Numbers matter.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-timeline reveal reveal-delay-2">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-year">2023</div>
+          <div class="tl-title">Started BSc Computer Systems Engineering at SLIIT</div>
+          <div class="tl-desc">Began deep focus on embedded systems, digital electronics, and computer architecture.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-year">2024</div>
+          <div class="tl-title">Built CLIMS IoT Security System</div>
+          <div class="tl-desc">Full end-to-end pipeline on ESP32: PIR → facial recognition → door lock → mobile alert.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-year">2025</div>
+          <div class="tl-title">PCB Fabrication + Cache Architecture Analysis</div>
+          <div class="tl-desc">Completed first custom PCB lifecycle. Built trace-driven cache simulator with real performance data.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-year">2025</div>
+          <div class="tl-title">Co-founded Agni Wing UAV Team</div>
+          <div class="tl-desc">5-attempt iterative aircraft build. Achieved 12 seconds of sustained flight at 30–40 ft.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-year">2026</div>
+          <div class="tl-title">PID Motor Control + Assembly Robot</div>
+          <div class="tl-desc">Two major Year 3 projects: closed-loop PI control with custom PCB, and fully assembly-programmed autonomous robot.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ══════════════════════════════════════════
+     TECH STACK
+══════════════════════════════════════════ -->
+<section id="skills" class="section" aria-label="Technical skills">
+  <div class="section-inner">
+    <p class="section-tag reveal">02 — Technical Expertise</p>
+    <h2 class="section-title reveal">The Full <span style="color:var(--blue)">Engineering Stack</span></h2>
+    <p class="section-sub reveal">From bare-metal register configuration to aerodynamic analysis — the complete toolkit.</p>
+    <div class="skills-grid">
+      <div class="skill-category skill-primary reveal">
+        <div class="skill-cat-header"><div class="skill-icon">⚙️</div><span class="skill-cat-name">Embedded Firmware</span></div>
+        <div class="skill-tags">
+          <span class="skill-tag">AVR Assembly</span><span class="skill-tag">C / C++</span><span class="skill-tag">Arduino</span>
+          <span class="skill-tag">ATmega328P</span><span class="skill-tag">PWM</span><span class="skill-tag">ADC</span>
+          <span class="skill-tag">GPIO</span><span class="skill-tag">Timers</span><span class="skill-tag">Register-level I/O</span>
+          <span class="skill-tag">FSM Design</span>
+        </div>
+      </div>
+      <div class="skill-category skill-primary reveal reveal-delay-1">
+        <div class="skill-cat-header"><div class="skill-icon">📐</div><span class="skill-cat-name">Control Systems</span></div>
+        <div class="skill-tags">
+          <span class="skill-tag">PID / PI Control</span><span class="skill-tag">MATLAB</span>
+          <span class="skill-tag">Simulink</span><span class="skill-tag">Encoder Feedback</span>
+          <span class="skill-tag">Motor Control</span><span class="skill-tag">Closed-Loop Design</span>
+          <span class="skill-tag">Gain Tuning</span>
+        </div>
+      </div>
+      <div class="skill-category skill-primary reveal reveal-delay-2">
+        <div class="skill-cat-header"><div class="skill-icon">🔌</div><span class="skill-cat-name">Hardware Design</span></div>
+        <div class="skill-tags">
+          <span class="skill-tag">PCB Design</span><span class="skill-tag">EasyEDA</span>
+          <span class="skill-tag">Two-layer Boards</span><span class="skill-tag">Signal Integrity</span>
+          <span class="skill-tag">DRC</span><span class="skill-tag">Soldering</span>
+          <span class="skill-tag">Board Fabrication</span>
+        </div>
+      </div>
+      <div class="skill-category reveal">
+        <div class="skill-cat-header"><div class="skill-icon">🖥️</div><span class="skill-cat-name">Platforms & SoC</span></div>
+        <div class="skill-tags">
+          <span class="skill-tag">Raspberry Pi 4</span><span class="skill-tag">ESP32</span>
+          <span class="skill-tag">Arduino Uno</span><span class="skill-tag">L298N H-Bridge</span>
+          <span class="skill-tag">IR Sensors</span><span class="skill-tag">Optical Encoder</span>
+        </div>
+      </div>
+      <div class="skill-category reveal reveal-delay-1">
+        <div class="skill-cat-header"><div class="skill-icon">🐍</div><span class="skill-cat-name">Software & Tools</span></div>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span><span class="skill-tag">Git</span><span class="skill-tag">Linux</span>
+          <span class="skill-tag">Tkinter GUI</span><span class="skill-tag">CSV Logging</span>
+          <span class="skill-tag">GPIO Programming</span><span class="skill-tag">Interrupt Handlers</span>
+        </div>
+      </div>
+      <div class="skill-category reveal reveal-delay-2">
+        <div class="skill-cat-header"><div class="skill-icon">✈️</div><span class="skill-cat-name">Aeronautics</span></div>
+        <div class="skill-tags">
+          <span class="skill-tag">Fixed-Wing Design</span><span class="skill-tag">Airfoil Analysis</span>
+          <span class="skill-tag">CG Positioning</span><span class="skill-tag">XFLR5</span>
+          <span class="skill-tag">OpenVSP</span><span class="skill-tag">T/W Ratio</span>
+          <span class="skill-tag">NASA Glenn Sims</span>
+        </div>
+      </div>
+      <div class="skill-category reveal">
+        <div class="skill-cat-header"><div class="skill-icon">⚡</div><span class="skill-cat-name">Electronics</span></div>
+        <div class="skill-tags">
+          <span class="skill-tag">Digital Logic</span><span class="skill-tag">Analog Circuits</span>
+          <span class="skill-tag">Oscilloscope</span><span class="skill-tag">RC Filters</span>
+          <span class="skill-tag">BJT Biasing</span><span class="skill-tag">Decoupling Caps</span>
+          <span class="skill-tag">Noise Filtering</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ══════════════════════════════════════════
+     PROJECTS
+══════════════════════════════════════════ -->
+<section id="projects" class="section" aria-label="Projects">
+  <div class="section-inner">
+    <p class="section-tag reveal">03 — Engineering Work</p>
+    <h2 class="section-title reveal">Projects Built,<br><span style="color:var(--blue)">Tested & Validated</span></h2>
+    <p class="section-sub reveal">Every project has a measurable outcome. Click any card for full technical breakdown.</p>
+
+    <div class="projects-grid" style="margin-top:3rem">
+
+      <!-- P1: PID Motor - FEATURED -->
+      <div class="project-card featured reveal" onclick="openModal('pid')" role="button" tabindex="0" aria-label="PID Motor Control project">
+        <div class="project-vis motor-vis">
+          <div class="grid-overlay"></div>
+          <div class="project-vis-inner" style="justify-content:flex-start;padding:1.5rem">
+            <div style="width:100%">
+              <div style="font-family:var(--mono);font-size:0.7rem;color:var(--gray-2);margin-bottom:1rem">MOTOR SPEED RESPONSE</div>
+              <svg viewBox="0 0 400 160" style="width:100%;height:auto">
+                <defs>
+                  <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#00b4ff"/>
+                    <stop offset="100%" stop-color="#00ffe0"/>
+                  </linearGradient>
+                </defs>
+                <!-- Setpoint line -->
+                <line x1="0" y1="40" x2="400" y2="40" stroke="rgba(0,180,255,0.25)" stroke-width="1" stroke-dasharray="4,4"/>
+                <!-- Response curve -->
+                <path d="M0,150 C40,150 50,10 80,35 C110,60 120,42 150,40 C200,38 250,40 400,40"
+                      fill="none" stroke="url(#lineGrad)" stroke-width="2.5"/>
+                <!-- ±2% band -->
+                <rect x="0" y="36" width="400" height="8" fill="rgba(0,255,224,0.05)"/>
+                <!-- Labels -->
+                <text x="8" y="36" font-family="Space Mono" font-size="9" fill="rgba(0,255,224,0.5)">Setpoint</text>
+                <text x="320" y="55" font-family="Space Mono" font-size="9" fill="rgba(0,180,255,0.6)">±2% band</text>
+                <!-- Overshoot annotation -->
+                <text x="72" y="16" font-family="Space Mono" font-size="9" fill="#ff9944">&lt;15% overshoot</text>
+                <line x1="80" y1="18" x2="80" y2="32" stroke="#ff9944" stroke-width="1" stroke-dasharray="2,2"/>
+              </svg>
+            </div>
+          </div>
+          <div class="project-badge">Year 3 · 2026</div>
+        </div>
+        <div class="project-body">
+          <div class="project-year">IE3034 · Control System Engineering</div>
+          <div class="project-name">PID-Controlled DC Motor Stabilisation System</div>
+          <div class="project-desc">Closed-loop PI controller (Kp=1, Ki=0.45) on Raspberry Pi with custom two-layer PCB, real-time Python GUI, and MATLAB/Simulink validation. Deliberate engineering decision to omit Kd after experimental noise analysis.</div>
+          <div class="project-metrics">
+            <div class="metric"><span class="metric-val">&lt;15%</span><span class="metric-label">Overshoot</span></div>
+            <div class="metric"><span class="metric-val">&lt;2%</span><span class="metric-label">Steady-state error</span></div>
+            <div class="metric"><span class="metric-val">2-layer</span><span class="metric-label">Custom PCB</span></div>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">Raspberry Pi 4</span><span class="project-tag">Python</span>
+            <span class="project-tag">L298N</span><span class="project-tag">PID Control</span>
+            <span class="project-tag">MATLAB</span><span class="project-tag">EasyEDA</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- P2: Line Following -->
+      <div class="project-card reveal" onclick="openModal('line')" role="button" tabindex="0" aria-label="Line following robot project">
+        <div class="project-vis pcb-vis">
+          <div class="grid-overlay"></div>
+          <div class="project-vis-inner" style="font-size:3rem">🤖</div>
+          <div class="project-badge">Year 3 · 2026</div>
+        </div>
+        <div class="project-body">
+          <div class="project-year">IE3064 · Embedded Systems Design</div>
+          <div class="project-name">Line-Following Robot with Autonomous Parking</div>
+          <div class="project-desc">Fully autonomous robot programmed in pure AVR Assembly — zero Arduino libraries. 8-state FSM, register-level PWM/ADC, IR parking detection, and lost-line recovery.</div>
+          <div class="project-metrics">
+            <div class="metric"><span class="metric-val">100%</span><span class="metric-label">Test pass rate</span></div>
+            <div class="metric"><span class="metric-val">8</span><span class="metric-label">FSM states</span></div>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">AVR Assembly</span><span class="project-tag">ATmega328P</span>
+            <span class="project-tag">L298N</span><span class="project-tag">IR Sensors</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- P3: Cache -->
+      <div class="project-card reveal reveal-delay-1" onclick="openModal('cache')" role="button" tabindex="0" aria-label="Cache simulator project">
+        <div class="project-vis cache-vis">
+          <div class="grid-overlay"></div>
+          <div class="project-vis-inner" style="padding:1.5rem;align-items:flex-start;font-size:1rem">
+            <div style="width:100%">
+              <div style="font-family:var(--mono);font-size:0.65rem;color:var(--gray-2);margin-bottom:0.75rem">MISS RATIO vs LINE SIZE</div>
+              <div style="display:flex;align-items:flex-end;gap:8px;height:80px">
+                <div style="display:flex;flex-direction:column;align-items:center;gap:4px">
+                  <div style="width:30px;height:70px;background:rgba(123,94,167,0.6);border-radius:4px 4px 0 0;border:1px solid rgba(123,94,167,0.4)"></div>
+                  <span style="font-family:var(--mono);font-size:0.6rem;color:var(--gray-2)">16B</span>
+                  <span style="font-family:var(--mono);font-size:0.65rem;color:var(--purple-hi)">0.237</span>
+                </div>
+                <div style="display:flex;flex-direction:column;align-items:center;gap:4px">
+                  <div style="width:30px;height:53px;background:rgba(123,94,167,0.6);border-radius:4px 4px 0 0;border:1px solid rgba(123,94,167,0.4)"></div>
+                  <span style="font-family:var(--mono);font-size:0.6rem;color:var(--gray-2)">32B</span>
+                  <span style="font-family:var(--mono);font-size:0.65rem;color:var(--purple-hi)">0.181</span>
+                </div>
+                <div style="display:flex;flex-direction:column;align-items:center;gap:4px">
+                  <div style="width:30px;height:45px;background:rgba(0,180,255,0.7);border-radius:4px 4px 0 0;border:1px solid rgba(0,180,255,0.5)"></div>
+                  <span style="font-family:var(--mono);font-size:0.6rem;color:var(--blue)">64B ✓</span>
+                  <span style="font-family:var(--mono);font-size:0.65rem;color:var(--blue)">0.155</span>
+                </div>
+                <div style="display:flex;flex-direction:column;align-items:center;gap:4px">
+                  <div style="width:30px;height:48px;background:rgba(123,94,167,0.4);border-radius:4px 4px 0 0;border:1px solid rgba(123,94,167,0.3)"></div>
+                  <span style="font-family:var(--mono);font-size:0.6rem;color:var(--gray-2)">128B</span>
+                  <span style="font-family:var(--mono);font-size:0.65rem;color:var(--gray-2)">↑ over-fetch</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-badge">Year 2 · 2025</div>
+        </div>
+        <div class="project-body">
+          <div class="project-year">Computer Architecture</div>
+          <div class="project-name">Cache Design & Performance Analysis Simulator</div>
+          <div class="project-desc">Python trace-driven simulator sweeping 36 parameter combinations. Proved 64B line size optimal, 35% miss ratio reduction vs 16B, AMAT ~13.0 ns.</div>
+          <div class="project-metrics">
+            <div class="metric"><span class="metric-val">35%</span><span class="metric-label">Miss ratio reduction</span></div>
+            <div class="metric"><span class="metric-val">13.0ns</span><span class="metric-label">Optimal AMAT</span></div>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">Python</span><span class="project-tag">LRU/FIFO/Random</span>
+            <span class="project-tag">AMAT</span><span class="project-tag">IEEE/ACM</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- P4: CLIMS -->
+      <div class="project-card reveal reveal-delay-2" onclick="openModal('clims')" role="button" tabindex="0" aria-label="CLIMS project">
+        <div class="project-vis iot-vis">
+          <div class="grid-overlay"></div>
+          <div class="project-vis-inner" style="font-size:3rem">🔐</div>
+          <div class="project-badge">Year 1 · 2024</div>
+        </div>
+        <div class="project-body">
+          <div class="project-year">IoT Systems</div>
+          <div class="project-name">CLIMS — Smart Surveillance & Access Control</div>
+          <div class="project-desc">End-to-end IoT pipeline: PIR motion → facial recognition → electronic door lock → mobile push alert. Full decision logic on ESP32. Triggers only on unrecognised faces.</div>
+          <div class="project-metrics">
+            <div class="metric"><span class="metric-val">E2E</span><span class="metric-label">IoT pipeline</span></div>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">ESP32</span><span class="project-tag">Python</span>
+            <span class="project-tag">OpenCV</span><span class="project-tag">IoT</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- P5: PCB Counter -->
+      <div class="project-card reveal" onclick="openModal('pcb')" role="button" tabindex="0" aria-label="PCB counter project">
+        <div class="project-vis counter-vis">
+          <div class="grid-overlay"></div>
+          <div class="project-vis-inner" style="font-size:3rem">🔧</div>
+          <div class="project-badge">Year 2 · 2025</div>
+        </div>
+        <div class="project-body">
+          <div class="project-year">Digital Electronics</div>
+          <div class="project-name">1-Digit Async Up Counter — PCB Fabrication</div>
+          <div class="project-desc">Full PCB lifecycle: EasyEDA schematic → DRC → fabrication → soldering → oscilloscope validation. 74HC74 D flip-flops, 0–9 decimal counter, seven-segment display.</div>
+          <div class="project-metrics">
+            <div class="metric"><span class="metric-val">Full</span><span class="metric-label">PCB lifecycle</span></div>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">EasyEDA</span><span class="project-tag">74HC74</span>
+            <span class="project-tag">Oscilloscope</span><span class="project-tag">DRC</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ══════════════════════════════════════════
+     ENGINEERING PROCESS
+══════════════════════════════════════════ -->
+<section id="process" class="section" aria-label="Engineering process">
+  <div class="section-inner">
+    <p class="section-tag reveal">04 — Methodology</p>
+    <h2 class="section-title reveal">How I <span style="color:var(--blue)">Engineer Systems</span></h2>
+    <p class="section-sub reveal">A repeatable process applied to every hardware-software system I build.</p>
+    <div class="process-flow">
+      <div class="process-step reveal"><div class="step-num">01</div><div class="step-title">Problem Analysis</div><div class="step-desc">Define performance targets and constraints before touching hardware or code.</div></div>
+      <div class="process-step reveal reveal-delay-1"><div class="step-num">02</div><div class="step-title">System Design</div><div class="step-desc">Architecture the hardware-software interface, data flow, and control logic.</div></div>
+      <div class="process-step reveal reveal-delay-2"><div class="step-num">03</div><div class="step-title">Simulation</div><div class="step-desc">MATLAB/Simulink or Python sim to validate design before committing to hardware.</div></div>
+      <div class="process-step reveal reveal-delay-3"><div class="step-num">04</div><div class="step-title">Prototype</div><div class="step-desc">Build minimal viable hardware. Register-level firmware. Measure immediately.</div></div>
+      <div class="process-step reveal"><div class="step-num">05</div><div class="step-title">Testing</div><div class="step-desc">Run every scenario. Capture data. Compare against the target spec.</div></div>
+      <div class="process-step reveal reveal-delay-1"><div class="step-num">06</div><div class="step-title">Failure Analysis</div><div class="step-desc">When something fails, find the root cause before changing anything.</div></div>
+      <div class="process-step reveal reveal-delay-2"><div class="step-num">07</div><div class="step-title">Optimisation</div><div class="step-desc">Refine based on evidence — not intuition. PCBs over breadboards. PI over PID where justified.</div></div>
+      <div class="process-step reveal reveal-delay-3"><div class="step-num">08</div><div class="step-title">Validation</div><div class="step-desc">Final end-to-end test against original spec. Document results. Ship.</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ══════════════════════════════════════════
+     AGNI WING
+══════════════════════════════════════════ -->
+<section id="agni" class="section" aria-label="Agni Wing UAV project">
+  <div class="section-inner">
+    <p class="section-tag reveal">05 — Personal Project</p>
+    <div class="agni-hero reveal">
+      <div class="agni-big-title">AGNI WING</div>
+      <p class="agni-sub">A self-directed, four-person engineering team on a long-term mission to build an autonomous fixed-wing UAV. We started by learning to fly manually.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-bottom:3rem;align-items:start">
+      <div class="reveal">
+        <h3 style="font-family:var(--display);font-size:1.3rem;font-weight:800;color:var(--white);margin-bottom:1rem">The Mission</h3>
+        <p style="color:var(--gray-1);line-height:1.75;font-size:0.95rem;margin-bottom:1rem">Long-term goal: autonomous fixed-wing UAV. Immediate goal: understand aerodynamics through failure. We chose to build and fly before simulating in XFLR5/OpenVSP, because real crashes teach things that virtual models don't.</p>
+        <p style="color:var(--gray-1);line-height:1.75;font-size:0.95rem">The 6-day initial build cycle covered aerodynamic layout, fuselage sizing, CG calculation, propeller offset, thrust-line alignment, and wing-fuselage integration — using NASA Glenn interactive simulations for airfoil analysis and CAD for dimensional work.</p>
+      </div>
+      <div class="reveal reveal-delay-1">
+        <h3 style="font-family:var(--display);font-size:1.3rem;font-weight:800;color:var(--white);margin-bottom:1rem">The Team</h3>
+        <div style="display:flex;flex-direction:column;gap:0.75rem">
+          <div style="padding:0.75rem 1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:8px;font-size:0.88rem;color:var(--gray-1);transition:border-color 0.3s;" onmouseover="this.style.borderColor='var(--blue)'" onmouseout="this.style.borderColor='var(--border)'">
+            <a href="https://www.linkedin.com/in/anojan-rasalingam-741353282/" target="_blank" rel="noopener" style="color:var(--blue);font-family:var(--mono);font-size:0.8rem;text-decoration:none;display:block;">Anojan Rasalingam</a>
+          </div>
+          <div style="padding:0.75rem 1rem;background:var(--bg-card);border:1px solid var(--border-hi);border-radius:8px;font-size:0.88rem;color:var(--gray-1);transition:border-color 0.3s;" onmouseover="this.style.borderColor='var(--cyan)'" onmouseout="this.style.borderColor='var(--border-hi)'">
+            <a href="https://www.linkedin.com/in/abiram-srikanthasegaram-a8b92a321/" target="_blank" rel="noopener" style="color:var(--cyan);font-family:var(--mono);font-size:0.8rem;text-decoration:none;display:block;">Abiram Srikanthasegaram</a>
+          </div>
+          <div style="padding:0.75rem 1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:8px;font-size:0.88rem;color:var(--gray-1);transition:border-color 0.3s;" onmouseover="this.style.borderColor='var(--blue)'" onmouseout="this.style.borderColor='var(--border)'">
+            <a href="https://www.linkedin.com/in/viyash18/" target="_blank" rel="noopener" style="color:var(--blue);font-family:var(--mono);font-size:0.8rem;text-decoration:none;display:block;">Viyashan Krishnarajan</a>
+          </div>
+          <div style="padding:0.75rem 1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:8px;font-size:0.88rem;color:var(--gray-1);transition:border-color 0.3s;" onmouseover="this.style.borderColor='var(--blue)'" onmouseout="this.style.borderColor='var(--border)'">
+            <a href="https://www.linkedin.com/in/ssran/" target="_blank" rel="noopener" style="color:var(--blue);font-family:var(--mono);font-size:0.8rem;text-decoration:none;display:block;">Sanjeevsaran Jeyanthan</a>
+          </div>
+          <div style="padding:0.75rem 1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:8px;font-size:0.88rem;color:var(--gray-1);transition:border-color 0.3s;" onmouseover="this.style.borderColor='var(--blue)'" onmouseout="this.style.borderColor='var(--border)'">
+            <a href="https://www.linkedin.com/in/lathussoban-uthayaruban-91012b309/" target="_blank" rel="noopener" style="color:var(--blue);font-family:var(--mono);font-size:0.8rem;text-decoration:none;display:block;">Lathussoban Uthayaruban</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="reveal" style="font-family:var(--mono);font-size:0.75rem;letter-spacing:0.15em;color:var(--blue);text-transform:uppercase;margin-bottom:1.5rem">// FLIGHT TEST PROGRAMME — 5 ATTEMPTS</h3>
+    <div class="agni-attempts reveal">
+      <div class="attempt">
+        <div class="attempt-num">ATTEMPT 01</div>
+        <span class="attempt-status">💥</span>
+        <div class="attempt-title">No Liftoff</div>
+        <div class="attempt-desc">CG too far aft. Nose pitch-up immediately on thrust. Structural failure on landing.</div>
+      </div>
+      <div class="attempt">
+        <div class="attempt-num">ATTEMPT 02</div>
+        <span class="attempt-status">💥</span>
+        <div class="attempt-title">Partial Lift</div>
+        <div class="attempt-desc">CG corrected. Insufficient thrust-to-weight margin. Settled back after 1–2 sec. Propeller damage.</div>
+      </div>
+      <div class="attempt">
+        <div class="attempt-num">ATTEMPT 03</div>
+        <span class="attempt-status">💥</span>
+        <div class="attempt-title">Roll Instability</div>
+        <div class="attempt-desc">Improved T/W. Lateral instability from propeller offset. Rolled right and crashed within 3 sec.</div>
+      </div>
+      <div class="attempt">
+        <div class="attempt-num">ATTEMPT 04</div>
+        <span class="attempt-status">⚠️</span>
+        <div class="attempt-title">Wing Root Failure</div>
+        <div class="attempt-desc">Offset corrected. Airframe achieved brief climb. Wing root structural failure under aerodynamic load.</div>
+      </div>
+      <div class="attempt" style="background:rgba(0,180,255,0.05)">
+        <div class="attempt-num">ATTEMPT 05</div>
+        <span class="attempt-status">✅</span>
+        <div class="attempt-title" style="color:var(--cyan)">First Flight</div>
+        <div class="attempt-desc" style="color:var(--gray-1)">All corrections applied. ~12 sec sustained flight. 30–40 ft altitude. Unstable descent but controlled.</div>
+      </div>
+    </div>
+
+    <div class="agni-specs reveal">
+      <div class="spec-card">
+        <div class="spec-icon">⚡</div>
+        <div class="spec-label">Motor</div>
+        <div class="spec-val">A2212 1125KV</div>
+        <div class="spec-sub">BLDC Brushless</div>
+      </div>
+      <div class="spec-card">
+        <div class="spec-icon">🔋</div>
+        <div class="spec-label">Battery</div>
+        <div class="spec-val">3S 2200mAh</div>
+        <div class="spec-sub">LiPo · 11.1V</div>
+      </div>
+      <div class="spec-card">
+        <div class="spec-icon">⚙️</div>
+        <div class="spec-label">ESC</div>
+        <div class="spec-val">40A</div>
+        <div class="spec-sub">Electronic Speed Controller</div>
+      </div>
+      <div class="spec-card">
+        <div class="spec-icon">🌀</div>
+        <div class="spec-label">Propeller</div>
+        <div class="spec-val">1045 / 1047</div>
+        <div class="spec-sub">10-inch pitch variants</div>
+      </div>
+      <div class="spec-card">
+        <div class="spec-icon">⚖️</div>
+        <div class="spec-label">All-Up Weight</div>
+        <div class="spec-val">~850–900 g</div>
+        <div class="spec-sub">AUW fully loaded</div>
+      </div>
+      <div class="spec-card" style="border-color:rgba(0,255,224,0.2)">
+        <div class="spec-icon">🎯</div>
+        <div class="spec-label">Best Flight</div>
+        <div class="spec-val" style="color:var(--cyan)">~12 sec</div>
+        <div class="spec-sub" style="color:var(--cyan)">30–40 ft altitude</div>
+      </div>
+    </div>
+
+    <div class="reveal" style="margin-top:3rem;padding:2rem;background:var(--bg-card);border:1px solid rgba(0,255,224,0.15);border-radius:var(--radius-lg)">
+      <h3 style="font-family:var(--mono);font-size:0.75rem;letter-spacing:0.15em;color:var(--cyan);text-transform:uppercase;margin-bottom:1rem">// NEXT PHASE</h3>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem">
+        <div style="font-size:0.88rem;color:var(--gray-1)">🔬 Aerodynamic validation with <strong style="color:var(--white)">XFLR5 / OpenVSP</strong></div>
+        <div style="font-size:0.88rem;color:var(--gray-1)">🏗️ Improved <strong style="color:var(--white)">wing root structural design</strong></div>
+        <div style="font-size:0.88rem;color:var(--gray-1)">🛫 Extended controlled <strong style="color:var(--white)">flight envelope</strong></div>
+        <div style="font-size:0.88rem;color:var(--gray-1)">🤖 Integration of <strong style="color:var(--white)">autonomous flight control</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ══════════════════════════════════════════
+     CERTIFICATIONS
+══════════════════════════════════════════ -->
+<section id="certs" class="section" aria-label="Certifications">
+  <div class="section-inner">
+    <p class="section-tag reveal">06 — Training</p>
+    <h2 class="section-title reveal">Certifications &<br><span style="color:var(--blue)">Industry Training</span></h2>
+    <div style="margin-top:2rem">
+      <div class="cert-card reveal">
+        <div class="cert-badge">🏭</div>
+        <div>
+          <div class="cert-name">PLC & Industrial Automation Workshop (PLCFI)</div>
+          <div class="cert-org">IEEE Student Branch, Curtin University Colombo · Sri Lanka Institute of Robotics (SLIR) · 2025</div>
+          <div class="cert-desc">Hands-on sessions covering PLC fundamentals, ladder logic programming, HMI/SCADA configuration using XINJE PLC hardware, and live motor and sensor control demonstrations. Awarded certificate of completion by SLIR.</div>
+          <div class="cert-skills">
+            <span class="cert-skill">PLC Programming</span><span class="cert-skill">Ladder Logic</span>
+            <span class="cert-skill">HMI / SCADA</span><span class="cert-skill">XINJE PLC</span>
+            <span class="cert-skill">Motor Control</span><span class="cert-skill">Sensor Integration</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ══════════════════════════════════════════
+     EDUCATION
+══════════════════════════════════════════ -->
+<section id="education" class="section" aria-label="Education">
+  <div class="section-inner">
+    <p class="section-tag reveal">07 — Education</p>
+    <h2 class="section-title reveal">Academic <span style="color:var(--blue)">Foundation</span></h2>
+    <div style="margin-top:2rem">
+      <div class="edu-card reveal">
+        <div>
+          <div class="edu-badge-row">
+            <div class="edu-badge">🎓</div>
+            <div>
+              <div class="edu-degree">BSc (Hons) Computer Systems Engineering</div>
+            </div>
+          </div>
+          <div class="edu-school">Sri Lanka Institute of Information Technology (SLIIT)</div>
+          <div class="edu-period" style="margin-bottom:1.5rem">Nov 2023 – Nov 2027 (Expected)</div>
+          <p style="font-size:0.88rem;color:var(--gray-1);line-height:1.7">Specialising in embedded systems, control engineering, and hardware-software integration. Active in engineering projects across firmware, PCB design, aeronautics, and IoT — all validated with measurable outcomes.</p>
+        </div>
+        <div>
+          <div style="font-family:var(--mono);font-size:0.72rem;color:var(--gray-2);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:1rem">Relevant Modules</div>
+          <div class="edu-modules">
+            <div class="edu-mod">Embedded Systems Design</div>
+            <div class="edu-mod">Control System Engineering</div>
+            <div class="edu-mod">Digital Electronics</div>
+            <div class="edu-mod">Computer Architecture</div>
+            <div class="edu-mod">Analog Electronics</div>
+            <div class="edu-mod">Systems Modelling & Prototyping</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ══════════════════════════════════════════
+     CONTACT
+══════════════════════════════════════════ -->
+<section id="contact" class="section" aria-label="Contact">
+  <div class="section-inner">
+    <div class="contact-grid">
+      <div>
+        <p class="section-tag reveal">08 — Contact</p>
+        <div class="contact-cta">
+          <h2 class="reveal">Let's Build<br><span style="color:var(--blue)">Intelligent Systems</span><br>Together</h2>
+          <p class="reveal">Open to embedded systems internships, firmware engineering roles, robotics teams, and UAV startups. Based in Jaffna — open to work in Jaffna, Colombo and remote.</p>
+        </div>
+        <div class="contact-links reveal">
+          <a href="mailto:sriabiram05@gmail.com" class="contact-link">
+            <div class="cl-icon">✉️</div>
+            <div><div class="cl-label">Email</div><div class="cl-val">sriabiram05@gmail.com</div></div>
+          </a>
+          <a href="https://linkedin.com/in/abiram-srikanthasegaram-a8b92a321" target="_blank" rel="noopener" class="contact-link">
+            <div class="cl-icon">💼</div>
+            <div><div class="cl-label">LinkedIn</div><div class="cl-val">abiram-srikanthasegaram</div></div>
+          </a>
+          <a href="#" class="contact-link">
+            <div class="cl-icon">📍</div>
+            <div><div class="cl-label">Location</div><div class="cl-val">Jaffna, Sri Lanka · Open to Colombo & Remote</div></div>
+          </a>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-1">
+        <form class="contact-form" onsubmit="handleForm(event)">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name"/>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email"/>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Internship opportunity / Collaboration / etc."/>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me about the role or project..." required></textarea>
+          </div>
+          <button type="submit" class="form-submit">Open Email Client →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════ -->
+<footer>
+  <div class="footer-left">
+    <span class="footer-name">Abiram Srikanthasegaram</span>
+    <span class="footer-tagline">Embedded Systems · Firmware · Control Systems · UAV</span>
+  </div>
+  <div class="footer-right">
+    <a href="mailto:sriabiram05@gmail.com" class="footer-link">Email</a>
+    <a href="https://linkedin.com/in/abiram-srikanthasegaram-a8b92a321" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
+    <span class="footer-copy">© 2026 Abiram Srikanthasegaram</span>
+  </div>
+</footer>
+
+<!-- ══════════════════════════════════════════
+     MODALS
+══════════════════════════════════════════ -->
+<div class="modal-overlay" id="modal" role="dialog" aria-modal="true" onclick="closeModalOutside(event)">
+  <div class="modal-box" id="modal-box">
+    <button class="modal-close" onclick="closeModal()" aria-label="Close">✕</button>
+    <div class="modal-content" id="modal-content"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
